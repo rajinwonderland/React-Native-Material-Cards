@@ -9,7 +9,7 @@ export default class CardContent extends Component {
         {this.props.avatarSource !== undefined && (
           <Image
             source={this.props.avatarSource}
-            resizeMode={this.props.avatarResize || "cover"}
+            resizeMode="cover"
             style={styles.avatarStyle}
           />
         )}

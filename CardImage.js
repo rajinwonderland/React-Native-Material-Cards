@@ -19,10 +19,10 @@ export default class CardImage extends Component {
       >
         <Image
           source={this.props.source}
-          resizeMode={this.props.resizeMode || "cover"}
+          resizeMode={"cover"}
           style={
             this.state.imageStyle ? (
-              [styles.imageContainer, this.props.imageStyle]
+              [styles.imageContaine]
             ) : (
               [styles.imageContainer, { height: this.state.calc_height }]
             )

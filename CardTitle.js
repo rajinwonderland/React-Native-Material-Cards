@@ -5,7 +5,7 @@ export default class CardTitle extends Component {
   render() {
     const newStyle = this.props.style || {};
     let titleStyle = [styles.titleText, this.props.titleStyle];
-    let subtitleStyle = [styles.subtitleText.this.props.subtitleStyle];
+    let subtitleStyle = [styles.subtitleText, this.props.subtitleStyle];
     if (
       this.props.title !== undefined &&
       this.props.subtitle !== undefined &&
@@ -29,8 +29,8 @@ export default class CardTitle extends Component {
           {this.props.avatarSource !== undefined && (
             <Image
               source={this.props.avatarSource}
-              resizeMode={this.props.avatarResize || "cover"}
-              style={styles.avatarStyle || this.props.avatarStyle}
+              resizeMode={"cover"}
+              style={styles.avatarStyle}
             />
           )}
           <View style={styles.cardTitleTextCont}>
