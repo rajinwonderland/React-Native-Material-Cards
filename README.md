@@ -50,9 +50,12 @@ import { Card, CardTitle, CardContent, CardAction, CardButton, CardImage } from 
 | Prop        | Type           | Effect  | Default Value |
 | ------------- |-------------| -----| -----|
 | title | string | The title text | undefined |
+| titleStyle | style | The  style object to be merged with title style | undefined |
 | subtitle | string | The subtitle text | undefined |
+| subtitleStyle | style | The  style object to be merged with subtitle style | undefined |
 | subtitleAbove | boolean | If the subtitle is to be shown above title | false |
 | avatarSource | object | The avatar image to be shown, passed to Image's source prop | undefined |
+| avatarResize | string | The avatar image resize mode to be shown, passed to Image's source prop | cover |
 | style | color | The  style object to be merged with default style | undefined |
 
 ## CardContent Component Options
@@ -66,6 +69,7 @@ import { Card, CardTitle, CardContent, CardAction, CardButton, CardImage } from 
 | Prop        | Type           | Effect  | Default Value |
 | ------------- |-------------| -----| -----|
 | source | object | The image to be shown, passed to Image's source prop | undefined |
+| resizeMod | string | The resizeMode prop to be merged with Image | cover |
 | style | color | The  style object to be merged with default style | undefined |
 
 ## CardAction Component Options
